@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckStockSetup"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#60add8e6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Checking Location:"
+                android:textSize="25sp"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="1. Front"
+                    android:textSize="21sp"
+                    android:textColor="#000000"/>
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="2. Back"
+                    android:textSize="21sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/radioSelected"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.29"
+                    android:text=""
+                    android:textSize="21sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/textview_background"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:text="HAND CODE :"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:gravity="left|center"/>
+
+        <EditText
+            android:id="@+id/edit_handcode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:text=""
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:text="CUST :"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:gravity="left|center"/>
+
+        <EditText
+            android:id="@+id/edit_customer"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:text=""
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:text="PROD :"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:gravity="left|center"/>
+
+        <EditText
+            android:id="@+id/edit_product"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:text=""
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:text="CORNER :"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:gravity="left|center"/>
+
+        <EditText
+            android:id="@+id/edit_corner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:text=""
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.4"
+            android:text="SHELF :"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:gravity="left|center"/>
+
+        <EditText
+            android:id="@+id/edit_shelf"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:text=""
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="DATE :"
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:id="@+id/edit_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:text=""
+            android:textSize="21sp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:text="MENU"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.05"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:text="RESET"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.05"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.3"
+            android:text="NEXT"/>
+
+    </LinearLayout>
+
+</LinearLayout>

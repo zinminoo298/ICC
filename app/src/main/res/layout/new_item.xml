@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Item Code"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/edt_bui"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/textview_background"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.1" />
+
+        <EditText
+            android:id="@+id/edt_item"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Barcode"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edt_bc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/textview_background"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Description"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/edt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/textview_background"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Qty"
+            android:textColor="#000000"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Price"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/edt_qty"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/textview_background"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.1" />
+
+        <EditText
+            android:id="@+id/edt_price"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/textview_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.4"
+            android:text="Save"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="0.2" />
+
+        <Button
+            android:id="@+id/btn_canel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.4"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+</LinearLayout>

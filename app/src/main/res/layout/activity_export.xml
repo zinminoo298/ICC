@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Export"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:text="Click Item to Export"
+            android:textColor="#0000ff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:text="Long Press to delete"
+            android:gravity="right"
+            android:textColor="#ff0000"/>
+    </LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkbox_device"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <EditText-->
+<!--            android:id="@+id/edt_device"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:hint="Device Name"-->
+<!--            android:background="@drawable/edit_text_background"-->
+<!--            android:text=""-->
+<!--            android:padding="5dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="19sp"/>-->
+<!--    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Setting"
+        android:layout_gravity="left"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearButton"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="506dp"
+                    android:layout_height="1dp"
+                    android:background="#40000000"
+                    android:layout_alignParentTop="true"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:background="#add8e6">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+                    <TextView
+                        android:id="@+id/view_pdcode"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:text="CheckDate" />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+                    <TextView
+                        android:id="@+id/view_bc"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:text="ST_CODE"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+                    <TextView
+                        android:id="@+id/view_desc"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:text="BUSI_PRD"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+                    <TextView
+                        android:id="@+id/view_price"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:text="CORNER"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+
+                    <TextView
+                        android:id="@+id/view_cat"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="PRICE"
+                        android:textColor="#000000" />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+                    <TextView
+                        android:id="@+id/view_ref"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:singleLine="true"
+                        android:gravity="center|left"
+                        android:text="QTY"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#40000000"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="506dp"
+                    android:layout_height="1dp"
+                    android:background="#40000000"
+                    android:layout_below="@+id/linearLayout"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linearLayout">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:id="@+id/linearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_tran"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="TRAN ALL"/>
+
+            <Button
+                android:id="@+id/btn_st"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:text="stk&amp;pc all"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
